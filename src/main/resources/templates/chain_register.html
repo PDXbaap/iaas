@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>PDX IaaS: Register a Blockchain Node</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <title>创建chain</title>
+</head>
+<body>
+<div class="container">
+    <h3>创建chain</h3>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">name:</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="name"
+                       placeholder="userName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="part" class="col-sm-3 control-label">part:</label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" id="part"
+                       placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="stat" class="col-sm-3 control-label">stat:</label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" id="stat"
+                       placeholder="rePassword">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="sizeDesired" class="col-sm-3 control-label">sizeDesired:</label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" id="sizeDesired"
+                       placeholder="rePassword">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="sizeService" class="col-sm-3 control-label">sizeService:</label>
+            <div class="col-sm-6">
+                <input type="password" class="form-control" id="sizeService"
+                       placeholder="rePassword">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-6">
+                <button type="submit" class="btn btn-default">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+<
+
+<p/>
+Directions:
+<p/>
+1) Present on this page, the blockchain parameters that a customer can select
+<p/>
+2) Generate (if not available) wallet and create token
+<p/>
+3) Generate json for chain validation request (Chain entity, parameters in properties)
+<p/>
+4) AJAX: call /rest/iaas/validate_chain_creation_request, which returns the $$$ if validated
+<p/>
+5) If validated, pay $PDX on the service chain via /rest/iaas/forward_iaas_payment
+<p/>
+6) Inject payment TXID to the above chain validation request's properties
+<p/>
+7) AJAX: call /rest/iaas/orchestrate_chain_creation to create the chain.
+
+<p/>
+Notes:
+
+<p/>
+
+1) The customer can check its status later with the chain name (chain id)
+
+<p/>
+
+2) Iaasservice.orchestrateChainCreation submits the creation to ChainCreationService.
+
+</body>
+</html>

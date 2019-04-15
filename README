@@ -1,0 +1,70 @@
+
+
+1) install rabbitmq
+
+https://tecadmin.net/install-rabbitmq-server-on-ubuntu/
+
+root@jz:/home/jz# apt-get install rabbitmq-server
+root@jz:/home/jz# systemctl start rabbitmq-server
+root@jz:/home/jz# rabbitmqctl add_user admin admin
+Creating user "admin"
+root@jz:/home/jz# rabbitmqctl set_user_tags admin administrator
+Setting tags for user "admin" to [administrator]
+root@jz:/home/jz# rabbitmqctl set_permissions -p  / admin ".*" ".*" ".*"
+Setting permissions for user "admin" in vhost "/"
+root@jz:/home/jz# rabbitmq-plugins enable rabbitmq_management
+
+http://localhost:15672/
+
+https://springbootdev.com/2017/09/15/spring-boot-and-rabbitmq-direct-exchange-example-messaging-custom-java-objects-and-consumes-with-a-listener/
+
+2) install mysql
+
+root@jz:/home/jz# apt-get install mysql-server
+
+root@jz:/home/jz# mysql
+
+mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
++------------------+-------------------------------------------+-----------------------+-----------+
+| user             | authentication_string                     | plugin                | host      |
++------------------+-------------------------------------------+-----------------------+-----------+
+| root             |                                           | auth_socket           | localhost |
+| mysql.session    | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | mysql_native_password | localhost |
+| mysql.sys        | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | mysql_native_password | localhost |
+| debian-sys-maint | *29E77D9D0238CF96C6672B6DF2DEE96FE6F0F7C9 | mysql_native_password | localhost |
++------------------+-------------------------------------------+-----------------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> create database pdx_iaas;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> create user 'pdx'@'localhost' identified by 'pdx';
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> grant all on pdx_iaas.* to 'pdx'@'localhost';
+Query OK, 0 rows affected (0.00 sec)
+
+
+3) zookeeper
+
+download and untar, assume to $ZOOKEEPER_HOME
+
+cp $ZOOKEEPER_HOME/conf/zoo_example.cfg $ZOOKEEPER_HOME/conf/zoo.cfg
+
+$ZOOKEEPER_HOME/bin/zkServer.sh start
+
+$#ZOOKEEPER_HOME/bin/zkCli.sh -server 127.0.0.1:2181
+
+4) mvn spring-boot:run
+
+5) test RESTful
+
+curl -X POST -H "Content-type: application/octet-stream" --data-binary "@/home/jz/temp/test.c" "http://localhost:8080/rest/chain/block?chain=abc&token=bbb"
+
+jz@jz:~/Documents/iaas-service$ curl -X PUT -H "Content-type:application/json" -d '{}' "http://localhost:8080/rest/chain/create?chain=abc&token=xyz"
+
+jz@jz:~/Documents/iaas-service$ curl -X GET "http://localhost:8080/rest/chain/retrieve?chain=abc"
+
+jz@jz:~/Documents/iaas-service$ curl -X PUT -H "Content-type:application/json" -d '{}' "http://localhost:8080/rest/chain/update?chain=abc&token=xyz"
+
+jz@jz:~/Documents/iaas-service$ curl -X DELETE "http://localhost:8080/rest/chain/delete?chain=abc"

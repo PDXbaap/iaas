@@ -1,0 +1,2001 @@
+17:00:03.811 DEBUG [c.g.j.JsonRpcHttpClient]  Request {"id":"1708120519","jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x8000d109daef5c81799bc01d4d82b0589deedb33","latest"]}
+17:00:03.904 DEBUG [c.g.j.JsonRpcHttpClient]  JSON-PRC Response: {"jsonrpc":"2.0","id":"1708120519","result":"0x0"}
+17:00:05.175 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+17:00:05.176 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+17:00:05.177 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+17:00:05.178 INFO [general]  Config ( no  ): user properties from file '/home/lixinchao/IdeaProjects/company-project/iaas-service/config/ethereumj.conf'
+17:00:05.178 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+17:00:05.179 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+17:00:05.179 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+17:00:05.180 INFO [general]  Config ( no  ): config passed via constructor
+17:00:05.190 DEBUG [general]  Config trace: # ethereumj.conf: 164-415
+blockchain {
+    # ethereumj.conf: 164
+    config {
+        # ethereumj.conf: 164
+        name=main
+    }
+    # ethereumj.conf: 415
+    only=false
+}
+# ethereumj.conf: 421
+blocks {
+    # ethereumj.conf: 421
+    loader=""
+}
+# ethereumj.conf: 211
+cache {
+    # ethereumj.conf: 232
+    blockQueueSize=32
+    # ethereumj.conf: 213
+    flush {
+        # ethereumj.conf: 222
+        blocks=0
+        # ethereumj.conf: 225
+        shortSyncFlush=true
+        # ethereumj.conf: 217
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 235
+    headerQueueSize=8
+    # ethereumj.conf: 241
+    maxStateBloomSize=128
+    # ethereumj.conf: 229
+    stateCacheSize=256
+}
+# ethereumj.conf: 424
+crypto {
+    # ethereumj.conf: 428-429
+    hash {
+        # ethereumj.conf: 428
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf: 429
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf: 426
+    providerName=SC
+}
+# ethereumj.conf: 172
+database {
+    # ethereumj.conf: 175
+    dir=database
+    # ethereumj.conf: 194
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 200
+    prune {
+        # ethereumj.conf: 201
+        enabled=true
+        # ethereumj.conf: 206
+        maxDepth=192
+    }
+    # ethereumj.conf: 181
+    reset=false
+    # ethereumj.conf: 187
+    resetBlock=0
+}
+# ethereumj.conf: 344
+dump {
+    # ethereumj.conf: 357
+    block=-1
+    # ethereumj.conf: 361
+    clean {
+        # ethereumj.conf: 361
+        on {
+            # ethereumj.conf: 361
+            restart=true
+        }
+    }
+    # ethereumj.conf: 351
+    dir=dmp
+    # ethereumj.conf: 350
+    full=false
+    # ethereumj.conf: 358
+    style=pretty
+}
+# ethereumj.conf: 150
+genesis="frontier.json"
+# ethereumj.conf: 397
+hello {
+    # ethereumj.conf: 397
+    phrase=Dev
+}
+# ethereumj.conf: 412
+keyvalue {
+    # ethereumj.conf: 412
+    datasource=leveldb
+}
+# ethereumj.conf: 283
+mine {
+    # ethereumj.conf: 302
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 293
+    cpuMineThreads=4
+    # ethereumj.conf: 306
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 299
+    fullDataSet=true
+    # ethereumj.conf: 315
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 312
+    minGasPrice=15000000000
+    # ethereumj.conf: 289
+    start=false
+    # ethereumj.conf: 319
+    startNonce=null
+}
+# ethereumj.conf: 1-77
+peer {
+    # ethereumj.conf: 92
+    active=[]
+    # ethereumj.conf: 121
+    capabilities=[
+        # ethereumj.conf: 121
+        eth
+    ]
+    # ethereumj.conf: 130
+    channel {
+        # ethereumj.conf: 130
+        read {
+            # ethereumj.conf: 130
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 125
+    connection {
+        # ethereumj.conf: 125
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 52
+        bind {
+            # ethereumj.conf: 52
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 44
+        external {
+            # ethereumj.conf: 44
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "5.1.83.226:30303",
+                # ethereumj.conf: 18
+                "52.16.188.185:30303",
+                # ethereumj.conf: 19
+                "13.93.211.84:30303",
+                # ethereumj.conf: 20
+                "191.235.84.50:30303",
+                # ethereumj.conf: 21
+                "13.75.154.138:30303",
+                # ethereumj.conf: 22
+                "52.74.57.123:30303",
+                # ethereumj.conf: 25
+                "163.172.187.252:30303",
+                # ethereumj.conf: 26
+                "163.172.157.114:30303",
+                # ethereumj.conf: 27
+                "136.243.154.244:30303",
+                # ethereumj.conf: 28
+                "88.212.206.70:30303",
+                # ethereumj.conf: 29
+                "37.128.191.230:30303",
+                # ethereumj.conf: 30
+                "46.20.235.22:30303",
+                # ethereumj.conf: 31
+                "216.158.85.185:30303",
+                # ethereumj.conf: 32
+                "212.47.247.103:30303",
+                # ethereumj.conf: 33
+                "138.201.144.135:30303",
+                # ethereumj.conf: 34
+                "45.55.33.62:30303",
+                # ethereumj.conf: 35
+                "188.166.255.12:30303",
+                # ethereumj.conf: 36
+                "159.203.210.80:30303",
+                # ethereumj.conf: 37
+                "51.15.42.252:30303",
+                # ethereumj.conf: 38
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 60
+        persist=true
+        # ethereumj.conf: 56
+        public {
+            # ethereumj.conf: 56
+            home {
+                # ethereumj.conf: 56
+                node=true
+            }
+        }
+        # ethereumj.conf: 69
+        touchMaxNodes=100
+        # ethereumj.conf: 65
+        touchPeriod=600
+        # ethereumj.conf: 74
+        workers=8
+    }
+    # ethereumj.conf: 80
+    listen {
+        # ethereumj.conf: 80
+        port=30303
+    }
+    # ethereumj.conf: 117
+    maxActivePeers=30
+    # ethereumj.conf: 83
+    networkId=1
+    # ethereumj.conf: 132
+    p2p {
+        # ethereumj.conf: 142
+        eip8=true
+        # ethereumj.conf: 138
+        framing {
+            # ethereumj.conf: 138
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 103
+    trusted=[]
+}
+# ethereumj.conf: 393
+play {
+    # ethereumj.conf: 393
+    vm=true
+}
+# ethereumj.conf: 386-414
+record {
+    # ethereumj.conf: 414
+    blocks=false
+    # ethereumj.conf: 386
+    internal {
+        # ethereumj.conf: 386
+        transactions {
+            # ethereumj.conf: 386
+            data=true
+        }
+    }
+}
+# ethereumj.conf: 409
+root {
+    # ethereumj.conf: 409
+    hash {
+        # ethereumj.conf: 409
+        start=null
+    }
+}
+# ethereumj.conf: 323
+solc {
+    # ethereumj.conf: 326
+    path=null
+}
+# ethereumj.conf: 245
+sync {
+    # ethereumj.conf: 249
+    enabled=true
+    # ethereumj.conf: 279
+    exitOnBlockConflict=false
+    # ethereumj.conf: 252
+    fast {
+        # ethereumj.conf: 256
+        enabled=false
+    }
+    # ethereumj.conf: 270
+    peer {
+        # ethereumj.conf: 270
+        count=30
+    }
+}
+# ethereumj.conf: 381
+trace {
+    # ethereumj.conf: 381
+    startblock=-1
+}
+# ethereumj.conf: 338-342
+transaction {
+    # ethereumj.conf: 338
+    approve {
+        # ethereumj.conf: 338
+        timeout=15
+    }
+    # ethereumj.conf: 342
+    outdated {
+        # ethereumj.conf: 342
+        threshold=10
+    }
+}
+# ethereumj.conf: 371
+vm {
+    # ethereumj.conf: 371
+    structured {
+        # ethereumj.conf: 374
+        compressed=true
+        # ethereumj.conf: 373
+        dir=vmtrace
+        # ethereumj.conf: 375
+        initStorageLimit=10000
+        # ethereumj.conf: 372
+        trace=false
+    }
+}
+
+17:00:05.226 ERROR [general]  Can't read config.
+java.lang.NullPointerException: null
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:219)
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:173)
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:161)
+	at org.ethereum.config.SystemProperties.getSpringDefault(SystemProperties.java:104)
+	at org.ethereum.config.SystemProperties.getDefault(SystemProperties.java:99)
+	at org.ethereum.crypto.HashUtil.<clinit>(HashUtil.java:55)
+	at org.ethereum.core.Transaction.getRawHash(Transaction.java:262)
+	at org.ethereum.core.Transaction.sign(Transaction.java:400)
+	at biz.pdxtech.iaas.util.ChainCodeClient.xchainTransfer(ChainCodeClient.java:215)
+	at biz.pdxtech.iaas.util.ChainCodeClient.main(ChainCodeClient.java:107)
+17:21:25.221 INFO [o.a.c.h.Http11NioProtocol]  Initializing ProtocolHandler ["http-nio-8080"]
+17:21:25.242 INFO [o.a.c.c.StandardService]  Starting service [Tomcat]
+17:21:25.242 INFO [o.a.c.c.StandardEngine]  Starting Servlet Engine: Apache Tomcat/8.5.34
+17:21:25.250 INFO [o.a.c.c.AprLifecycleListener]  The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17:21:25.412 INFO [o.a.c.c.C.[.[.[/]]  Initializing Spring embedded WebApplicationContext
+17:21:25.933 DEBUG [c.z.h.HikariConfig]  Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+17:21:26.104 DEBUG [c.z.h.HikariConfig]  HikariPool-1 - configuration:
+17:21:26.106 DEBUG [c.z.h.HikariConfig]  allowPoolSuspension.............false
+17:21:26.106 DEBUG [c.z.h.HikariConfig]  autoCommit......................true
+17:21:26.106 DEBUG [c.z.h.HikariConfig]  catalog.........................none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  connectionInitSql...............none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  connectionTestQuery.............none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  connectionTimeout...............30000
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  dataSource......................none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  dataSourceClassName.............none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  dataSourceJNDI..................none
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  dataSourceProperties............{password=<masked>}
+17:21:26.107 DEBUG [c.z.h.HikariConfig]  driverClassName................."com.mysql.jdbc.Driver"
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  healthCheckProperties...........{}
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  healthCheckRegistry.............none
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  idleTimeout.....................600000
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  initializationFailFast..........true
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  initializationFailTimeout.......1
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  isolateInternalQueries..........false
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  jdbc4ConnectionTest.............false
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  jdbcUrl.........................jdbc:mysql://127.0.0.1:3306/pdx_iaas?useSSL=false
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  leakDetectionThreshold..........0
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  maxLifetime.....................1800000
+17:21:26.108 DEBUG [c.z.h.HikariConfig]  maximumPoolSize.................10
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  metricRegistry..................none
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  metricsTrackerFactory...........none
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  minimumIdle.....................10
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  password........................<masked>
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  poolName........................"HikariPool-1"
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  readOnly........................false
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  registerMbeans..................false
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  scheduledExecutor...............none
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  scheduledExecutorService........internal
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  schema..........................none
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  threadFactory...................internal
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  transactionIsolation............default
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  username........................"root"
+17:21:26.109 DEBUG [c.z.h.HikariConfig]  validationTimeout...............5000
+17:21:26.109 INFO [c.z.h.HikariDataSource]  HikariPool-1 - Starting...
+17:21:26.381 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7767bd4e
+17:21:26.384 INFO [c.z.h.HikariDataSource]  HikariPool-1 - Start completed.
+17:21:26.485 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+17:21:26.510 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@57144482
+17:21:26.521 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@373bbbcd
+17:21:26.539 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2b30a6f9
+17:21:26.545 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5aae903e
+17:21:26.554 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@782813a1
+17:21:26.565 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@78d5770a
+17:21:26.574 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@46f6a48f
+17:21:26.585 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@30e56857
+17:21:26.596 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3231899a
+17:21:26.596 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+17:21:33.541 INFO [s.d.s.w.p.DocumentationPluginsBootstrapper]  Context refreshed
+17:21:33.571 INFO [s.d.s.w.p.DocumentationPluginsBootstrapper]  Found 1 custom documentation plugin(s)
+17:21:33.622 INFO [s.d.s.w.s.ApiListingReferenceScanner]  Scanning for api listing references
+17:21:33.648 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:33.649 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:33.651 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |create|
+17:21:33.654 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:33.668 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/lang/String; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.671 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:33.671 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.707 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:33.710 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.712 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:33.732 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:33.732 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:33.733 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |create|
+17:21:33.734 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:33.766 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property code
+17:21:33.770 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'code' renamed to 'code'
+17:21:33.784 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property msg
+17:21:33.784 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'msg' renamed to 'msg'
+17:21:33.784 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property data
+17:21:33.785 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'data' renamed to 'data'
+17:21:33.790 DEBUG [s.d.s.DefaultModelProvider]  Inferred 3 properties. Properties found code, data, msg
+17:21:33.793 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:33.793 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key RespEntity
+17:21:33.801 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.802 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.803 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.805 INFO [s.d.s.w.r.o.CachingOperationNameGenerator]  Generating unique operation named: createUsingGET_1
+17:21:33.811 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.812 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.813 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.818 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.820 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.821 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.826 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.827 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.828 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.831 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.832 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.833 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.837 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.838 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.839 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.843 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.844 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.844 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.848 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.848 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:33.849 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.850 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljavax/ws/rs/core/Response;
+17:21:33.851 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |delete2|
+17:21:33.851 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |delete2|
+17:21:33.851 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |delete2|
+17:21:33.865 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property mediaType
+17:21:33.872 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMediaType
+17:21:33.872 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'mediaType' renamed to 'mediaType'
+17:21:33.872 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property mediaType to model
+17:21:33.872 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMediaType
+17:21:33.872 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMediaType
+17:21:33.872 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMediaType
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMediaType
+17:21:33.873 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property date
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDate
+17:21:33.873 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'date' renamed to 'date'
+17:21:33.873 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property date to model
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDate
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDate
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDate
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDate
+17:21:33.873 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property lastModified
+17:21:33.873 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLastModified
+17:21:33.874 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'lastModified' renamed to 'lastModified'
+17:21:33.874 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property lastModified to model
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLastModified
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLastModified
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLastModified
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLastModified
+17:21:33.874 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property headers
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHeaders
+17:21:33.874 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'headers' renamed to 'headers'
+17:21:33.874 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property headers to model
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHeaders
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHeaders
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHeaders
+17:21:33.874 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHeaders
+17:21:33.874 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property metadata
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMetadata
+17:21:33.875 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'metadata' renamed to 'metadata'
+17:21:33.875 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property metadata to model
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMetadata
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMetadata
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMetadata
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMetadata
+17:21:33.875 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property entity
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntity
+17:21:33.875 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'entity' renamed to 'entity'
+17:21:33.875 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property entity to model
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntity
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntity
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntity
+17:21:33.875 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntity
+17:21:33.875 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property status
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatus
+17:21:33.876 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'status' renamed to 'status'
+17:21:33.876 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property status to model
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatus
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatus
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatus
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatus
+17:21:33.876 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property statusInfo
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusInfo
+17:21:33.876 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'statusInfo' renamed to 'statusInfo'
+17:21:33.876 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property statusInfo to model
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusInfo
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusInfo
+17:21:33.876 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusInfo
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusInfo
+17:21:33.877 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property allowedMethods
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAllowedMethods
+17:21:33.877 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'allowedMethods' renamed to 'allowedMethods'
+17:21:33.877 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property allowedMethods to model
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAllowedMethods
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAllowedMethods
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAllowedMethods
+17:21:33.877 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAllowedMethods
+17:21:33.877 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property cookies
+17:21:33.878 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCookies
+17:21:33.878 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'cookies' renamed to 'cookies'
+17:21:33.878 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property cookies to model
+17:21:33.878 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCookies
+17:21:33.878 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCookies
+17:21:33.878 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCookies
+17:21:33.878 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCookies
+17:21:33.878 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property entityTag
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntityTag
+17:21:33.879 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'entityTag' renamed to 'entityTag'
+17:21:33.879 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property entityTag to model
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntityTag
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntityTag
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntityTag
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getEntityTag
+17:21:33.879 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property stringHeaders
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStringHeaders
+17:21:33.879 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'stringHeaders' renamed to 'stringHeaders'
+17:21:33.879 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property stringHeaders to model
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStringHeaders
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStringHeaders
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStringHeaders
+17:21:33.879 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStringHeaders
+17:21:33.880 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property links
+17:21:33.880 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLinks
+17:21:33.880 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'links' renamed to 'links'
+17:21:33.880 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property links to model
+17:21:33.880 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLinks
+17:21:33.880 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLinks
+17:21:33.880 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLinks
+17:21:33.880 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLinks
+17:21:33.880 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property length
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLength
+17:21:33.881 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'length' renamed to 'length'
+17:21:33.881 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property length to model
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLength
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLength
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLength
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLength
+17:21:33.881 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property language
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.881 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'language' renamed to 'language'
+17:21:33.881 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property language to model
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.881 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.882 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property location
+17:21:33.882 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLocation
+17:21:33.882 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'location' renamed to 'location'
+17:21:33.882 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property location to model
+17:21:33.882 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLocation
+17:21:33.882 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLocation
+17:21:33.882 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLocation
+17:21:33.882 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLocation
+17:21:33.882 DEBUG [s.d.s.DefaultModelProvider]  Inferred 16 properties. Properties found allowedMethods, cookies, date, entity, entityTag, headers, language, lastModified, length, links, location, mediaType, metadata, status, statusInfo, stringHeaders
+17:21:33.883 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: Response, name: Response, schema: {} models
+17:21:33.883 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key Response
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Set<Ljava/lang/String;>; for parameter allowedMethods
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljava/lang/String;
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Map<Ljava/lang/String;Ljavax/ws/rs/core/NewCookie;>; for parameter cookies
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding value type Ljavax/ws/rs/core/NewCookie;
+17:21:33.883 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljavax/ws/rs/core/NewCookie;
+17:21:33.885 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property name
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getName
+17:21:33.886 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'name' renamed to 'name'
+17:21:33.886 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property name to model
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getName
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getName
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getName
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getName
+17:21:33.886 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property value
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.886 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'value' renamed to 'value'
+17:21:33.886 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property value to model
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.886 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.886 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property version
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVersion
+17:21:33.887 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'version' renamed to 'version'
+17:21:33.887 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property version to model
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVersion
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVersion
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVersion
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVersion
+17:21:33.887 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property path
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.887 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'path' renamed to 'path'
+17:21:33.887 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property path to model
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.887 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property domain
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDomain
+17:21:33.887 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'domain' renamed to 'domain'
+17:21:33.887 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property domain to model
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDomain
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDomain
+17:21:33.887 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDomain
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDomain
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property comment
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getComment
+17:21:33.888 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'comment' renamed to 'comment'
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property comment to model
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getComment
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getComment
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getComment
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getComment
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property maxAge
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMaxAge
+17:21:33.888 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'maxAge' renamed to 'maxAge'
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property maxAge to model
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMaxAge
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMaxAge
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMaxAge
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getMaxAge
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property expiry
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExpiry
+17:21:33.888 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'expiry' renamed to 'expiry'
+17:21:33.888 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property expiry to model
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExpiry
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExpiry
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExpiry
+17:21:33.888 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExpiry
+17:21:33.889 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property secure
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isSecure
+17:21:33.889 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'secure' renamed to 'secure'
+17:21:33.889 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property secure to model
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isSecure
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isSecure
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isSecure
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isSecure
+17:21:33.889 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property httpOnly
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isHttpOnly
+17:21:33.889 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'httpOnly' renamed to 'httpOnly'
+17:21:33.889 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property httpOnly to model
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isHttpOnly
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isHttpOnly
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isHttpOnly
+17:21:33.889 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isHttpOnly
+17:21:33.890 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/EntityTag; for parameter entityTag
+17:21:33.890 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljavax/ws/rs/core/EntityTag;
+17:21:33.890 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property value
+17:21:33.890 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.891 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'value' renamed to 'value'
+17:21:33.891 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property value to model
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getValue
+17:21:33.891 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property weak
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWeak
+17:21:33.891 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'weak' renamed to 'weak'
+17:21:33.891 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property weak to model
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWeak
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWeak
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWeak
+17:21:33.891 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWeak
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>; for parameter headers
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding value type Ljava/util/List<Ljava/lang/Object;>;
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljava/util/List<Ljava/lang/Object;>;
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type for parameter Ljava/lang/Object;
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for parameter Ljava/lang/Object;
+17:21:33.891 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/Object; as seen
+17:21:33.892 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Locale; for parameter language
+17:21:33.892 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljava/util/Locale;
+17:21:33.897 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property language
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.898 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'language' renamed to 'language'
+17:21:33.898 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property language to model
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getLanguage
+17:21:33.898 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property script
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScript
+17:21:33.898 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'script' renamed to 'script'
+17:21:33.898 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property script to model
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScript
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScript
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScript
+17:21:33.898 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScript
+17:21:33.899 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property country
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCountry
+17:21:33.899 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'country' renamed to 'country'
+17:21:33.899 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property country to model
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCountry
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCountry
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCountry
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getCountry
+17:21:33.899 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property variant
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVariant
+17:21:33.899 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'variant' renamed to 'variant'
+17:21:33.899 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property variant to model
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVariant
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVariant
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVariant
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getVariant
+17:21:33.899 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property extensionKeys
+17:21:33.899 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExtensionKeys
+17:21:33.899 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'extensionKeys' renamed to 'extensionKeys'
+17:21:33.900 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property extensionKeys to model
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExtensionKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExtensionKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExtensionKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getExtensionKeys
+17:21:33.900 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property unicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'unicodeLocaleAttributes' renamed to 'unicodeLocaleAttributes'
+17:21:33.900 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property unicodeLocaleAttributes to model
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleAttributes
+17:21:33.900 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property unicodeLocaleKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleKeys
+17:21:33.900 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'unicodeLocaleKeys' renamed to 'unicodeLocaleKeys'
+17:21:33.900 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property unicodeLocaleKeys to model
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleKeys
+17:21:33.900 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUnicodeLocaleKeys
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property iso3Language
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Language
+17:21:33.901 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'iso3Language' renamed to 'iso3Language'
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property iso3Language to model
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Language
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Language
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Language
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Language
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property iso3Country
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Country
+17:21:33.901 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'iso3Country' renamed to 'iso3Country'
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property iso3Country to model
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Country
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Country
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Country
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getISO3Country
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property displayLanguage
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayLanguage
+17:21:33.901 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'displayLanguage' renamed to 'displayLanguage'
+17:21:33.901 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property displayLanguage to model
+17:21:33.901 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayLanguage
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayLanguage
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayLanguage
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayLanguage
+17:21:33.902 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property displayScript
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayScript
+17:21:33.902 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'displayScript' renamed to 'displayScript'
+17:21:33.902 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property displayScript to model
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayScript
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayScript
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayScript
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayScript
+17:21:33.902 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property displayCountry
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayCountry
+17:21:33.902 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'displayCountry' renamed to 'displayCountry'
+17:21:33.902 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property displayCountry to model
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayCountry
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayCountry
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayCountry
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayCountry
+17:21:33.902 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property displayVariant
+17:21:33.902 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayVariant
+17:21:33.903 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'displayVariant' renamed to 'displayVariant'
+17:21:33.903 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property displayVariant to model
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayVariant
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayVariant
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayVariant
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayVariant
+17:21:33.903 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property displayName
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayName
+17:21:33.903 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'displayName' renamed to 'displayName'
+17:21:33.903 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property displayName to model
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayName
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayName
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayName
+17:21:33.903 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getDisplayName
+17:21:33.903 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Set<Ljava/lang/Character;>; for parameter extensionKeys
+17:21:33.903 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding collectionElement type Ljava/lang/Character;
+17:21:33.903 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljava/lang/Character;
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Set<Ljava/lang/String;>; for parameter unicodeLocaleAttributes
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljava/lang/String;
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Set<Ljava/lang/String;>; for parameter unicodeLocaleKeys
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljava/lang/String;
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Set<Ljavax/ws/rs/core/Link;>; for parameter links
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding collectionElement type Ljavax/ws/rs/core/Link;
+17:21:33.907 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljavax/ws/rs/core/Link;
+17:21:33.909 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property params
+17:21:33.909 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParams
+17:21:33.909 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'params' renamed to 'params'
+17:21:33.909 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property params to model
+17:21:33.909 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParams
+17:21:33.909 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParams
+17:21:33.909 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParams
+17:21:33.909 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParams
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property title
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getTitle
+17:21:33.910 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'title' renamed to 'title'
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property title to model
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getTitle
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getTitle
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getTitle
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getTitle
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property uri
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUri
+17:21:33.910 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'uri' renamed to 'uri'
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property uri to model
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUri
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUri
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUri
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUri
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property uriBuilder
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUriBuilder
+17:21:33.910 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'uriBuilder' renamed to 'uriBuilder'
+17:21:33.910 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property uriBuilder to model
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUriBuilder
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUriBuilder
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUriBuilder
+17:21:33.910 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUriBuilder
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rel
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRel
+17:21:33.911 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rel' renamed to 'rel'
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rel to model
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRel
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRel
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRel
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRel
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rels
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRels
+17:21:33.911 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rels' renamed to 'rels'
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rels to model
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRels
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRels
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRels
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRels
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property type
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.911 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'type' renamed to 'type'
+17:21:33.911 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property type to model
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.911 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>; for parameter params
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljava/lang/String;
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/List<Ljava/lang/String;>; for parameter rels
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for collectionElement type Ljava/lang/String;
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/net/URI; for parameter uri
+17:21:33.912 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljava/net/URI;
+17:21:33.915 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property scheme
+17:21:33.915 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScheme
+17:21:33.915 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'scheme' renamed to 'scheme'
+17:21:33.915 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property scheme to model
+17:21:33.915 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScheme
+17:21:33.915 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScheme
+17:21:33.915 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScheme
+17:21:33.915 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getScheme
+17:21:33.915 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property fragment
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFragment
+17:21:33.916 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'fragment' renamed to 'fragment'
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property fragment to model
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFragment
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFragment
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFragment
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFragment
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property authority
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAuthority
+17:21:33.916 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'authority' renamed to 'authority'
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property authority to model
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAuthority
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAuthority
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAuthority
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getAuthority
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property userInfo
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUserInfo
+17:21:33.916 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'userInfo' renamed to 'userInfo'
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property userInfo to model
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUserInfo
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUserInfo
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUserInfo
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getUserInfo
+17:21:33.916 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property host
+17:21:33.916 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHost
+17:21:33.916 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'host' renamed to 'host'
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property host to model
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHost
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHost
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHost
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getHost
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property port
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPort
+17:21:33.917 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'port' renamed to 'port'
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property port to model
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPort
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPort
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPort
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPort
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property path
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.917 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'path' renamed to 'path'
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property path to model
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getPath
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property query
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getQuery
+17:21:33.917 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'query' renamed to 'query'
+17:21:33.917 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property query to model
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getQuery
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getQuery
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getQuery
+17:21:33.917 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getQuery
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property schemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'schemeSpecificPart' renamed to 'schemeSpecificPart'
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property schemeSpecificPart to model
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawSchemeSpecificPart' renamed to 'rawSchemeSpecificPart'
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawSchemeSpecificPart to model
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawSchemeSpecificPart
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawAuthority
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawAuthority
+17:21:33.918 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawAuthority' renamed to 'rawAuthority'
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawAuthority to model
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawAuthority
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawAuthority
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawAuthority
+17:21:33.918 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawAuthority
+17:21:33.918 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawUserInfo' renamed to 'rawUserInfo'
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawUserInfo to model
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawUserInfo
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawPath
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawPath
+17:21:33.919 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawPath' renamed to 'rawPath'
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawPath to model
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawPath
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawPath
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawPath
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawPath
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawQuery
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawQuery
+17:21:33.919 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawQuery' renamed to 'rawQuery'
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawQuery to model
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawQuery
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawQuery
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawQuery
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawQuery
+17:21:33.919 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property rawFragment
+17:21:33.919 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawFragment
+17:21:33.920 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'rawFragment' renamed to 'rawFragment'
+17:21:33.920 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property rawFragment to model
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawFragment
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawFragment
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawFragment
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getRawFragment
+17:21:33.920 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property absolute
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isAbsolute
+17:21:33.920 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'absolute' renamed to 'absolute'
+17:21:33.920 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property absolute to model
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isAbsolute
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isAbsolute
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isAbsolute
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isAbsolute
+17:21:33.920 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property opaque
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isOpaque
+17:21:33.920 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'opaque' renamed to 'opaque'
+17:21:33.920 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property opaque to model
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isOpaque
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isOpaque
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isOpaque
+17:21:33.920 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isOpaque
+17:21:33.920 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/UriBuilder; for parameter uriBuilder
+17:21:33.920 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljavax/ws/rs/core/UriBuilder;
+17:21:33.922 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/net/URI; for parameter location
+17:21:33.922 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljava/net/URI;
+17:21:33.923 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/MediaType; for parameter mediaType
+17:21:33.923 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljavax/ws/rs/core/MediaType;
+17:21:33.925 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property type
+17:21:33.925 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.925 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'type' renamed to 'type'
+17:21:33.925 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property type to model
+17:21:33.925 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.925 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.925 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.925 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getType
+17:21:33.926 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property subtype
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSubtype
+17:21:33.926 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'subtype' renamed to 'subtype'
+17:21:33.926 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property subtype to model
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSubtype
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSubtype
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSubtype
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getSubtype
+17:21:33.926 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property parameters
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParameters
+17:21:33.926 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'parameters' renamed to 'parameters'
+17:21:33.926 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property parameters to model
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParameters
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParameters
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParameters
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getParameters
+17:21:33.926 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property wildcardType
+17:21:33.926 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardType
+17:21:33.926 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'wildcardType' renamed to 'wildcardType'
+17:21:33.927 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property wildcardType to model
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardType
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardType
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardType
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardType
+17:21:33.927 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property wildcardSubtype
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardSubtype
+17:21:33.927 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'wildcardSubtype' renamed to 'wildcardSubtype'
+17:21:33.927 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property wildcardSubtype to model
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardSubtype
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardSubtype
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardSubtype
+17:21:33.927 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member isWildcardSubtype
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>; for parameter parameters
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljava/lang/String;
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/Object;>; for parameter metadata
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding value type Ljava/util/List<Ljava/lang/Object;>;
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljava/util/List<Ljava/lang/Object;>;
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type for parameter Ljava/lang/Object;
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for parameter Ljava/lang/Object;
+17:21:33.927 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/Object; as seen
+17:21:33.928 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/Response$StatusType; for parameter statusInfo
+17:21:33.928 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for type Ljavax/ws/rs/core/Response$StatusType;
+17:21:33.929 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property family
+17:21:33.929 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFamily
+17:21:33.929 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'family' renamed to 'family'
+17:21:33.929 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property family to model
+17:21:33.929 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFamily
+17:21:33.929 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFamily
+17:21:33.929 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFamily
+17:21:33.929 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getFamily
+17:21:33.933 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property statusCode
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusCode
+17:21:33.934 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'statusCode' renamed to 'statusCode'
+17:21:33.934 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property statusCode to model
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusCode
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusCode
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusCode
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getStatusCode
+17:21:33.934 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Reading property reasonPhrase
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getReasonPhrase
+17:21:33.934 DEBUG [s.d.s.p.ObjectMapperBeanPropertyNamingStrategy]  Name 'reasonPhrase' renamed to 'reasonPhrase'
+17:21:33.934 DEBUG [s.d.s.p.OptimizedModelPropertiesProvider]  Adding property reasonPhrase to model
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getReasonPhrase
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getReasonPhrase
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getReasonPhrase
+17:21:33.934 DEBUG [s.d.s.p.b.BeanModelProperty]  Evaluating unwrapped getter for member getReasonPhrase
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>; for parameter stringHeaders
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding value type Ljava/util/List<Ljava/lang/String;>;
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for value type Ljava/util/List<Ljava/lang/String;>;
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Adding type for parameter Ljava/lang/String;
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Recursively resolving dependencies for parameter Ljava/lang/String;
+17:21:33.934 DEBUG [s.d.s.DefaultModelDependencyProvider]  Marking base type Ljava/lang/String; as seen
+17:21:33.935 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/util/Set<Ljava/lang/String;>; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.935 DEBUG [s.d.s.DefaultModelProvider]  Inferred 10 properties. Properties found comment, domain, expiry, httpOnly, maxAge, name, path, secure, value, version
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Inferred 2 properties. Properties found value, weak
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/util/List<Ljava/lang/Object;>; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Inferred 14 properties. Properties found country, displayCountry, displayLanguage, displayName, displayScript, displayVariant, extensionKeys, iso3Country, iso3Language, language, script, unicodeLocaleAttributes, unicodeLocaleKeys, variant
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/util/Set<Ljava/lang/Character;>; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Inferred 0 properties. Properties found 
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/util/Set<Ljavax/ws/rs/core/Link;>; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Inferred 7 properties. Properties found params, rel, rels, title, type, uri, uriBuilder
+17:21:33.936 DEBUG [s.d.s.DefaultModelProvider]  Skipping model of type Ljava/util/List<Ljava/lang/String;>; as its either a container type, map, enum or base type, or its already been handled
+17:21:33.937 DEBUG [s.d.s.DefaultModelProvider]  Inferred 17 properties. Properties found absolute, authority, fragment, host, opaque, path, port, query, rawAuthority, rawFragment, rawPath, rawQuery, rawSchemeSpecificPart, rawUserInfo, scheme, schemeSpecificPart, userInfo
+17:21:33.937 DEBUG [s.d.s.DefaultModelProvider]  Inferred 0 properties. Properties found 
+17:21:33.937 DEBUG [s.d.s.DefaultModelProvider]  Inferred 5 properties. Properties found parameters, subtype, type, wildcardSubtype, wildcardType
+17:21:33.937 DEBUG [s.d.s.DefaultModelProvider]  Inferred 3 properties. Properties found family, reasonPhrase, statusCode
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key Locale
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key Character
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key StatusType
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key MediaType
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key EntityTag
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key UriBuilder
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key URI
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key Link
+17:21:33.937 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key NewCookie
+17:21:33.940 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: Response
+17:21:33.941 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method delete2
+17:21:33.942 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:Response
+17:21:33.944 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:33.944 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |deleteChain|
+17:21:33.945 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |deleteChain|
+17:21:33.945 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |deleteChain|
+17:21:33.946 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:33.948 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.949 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.949 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.953 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.954 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.954 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.957 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.958 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.959 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.962 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.962 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.963 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.966 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.967 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.968 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.971 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.971 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.972 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.974 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.975 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.975 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.978 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.979 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method deleteChain
+17:21:33.980 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.981 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:33.981 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |getChainList|
+17:21:33.982 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |getChainList|
+17:21:33.982 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |getChainList|
+17:21:33.982 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:33.984 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.985 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:33.985 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.988 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.989 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:33.989 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.992 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.993 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:33.994 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:33.998 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:33.998 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:33.999 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.002 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.002 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:34.003 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.007 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.009 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:34.011 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.016 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.017 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:34.018 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.020 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.021 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getChainList
+17:21:34.021 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.023 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.023 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |renew|
+17:21:34.025 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |renew|
+17:21:34.026 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |renew|
+17:21:34.026 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.030 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.031 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.031 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.033 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.034 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.034 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.036 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.037 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.037 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.040 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.040 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.041 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.043 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.044 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.045 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.049 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.049 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.050 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.052 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.052 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.053 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.055 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.055 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method renew
+17:21:34.056 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.057 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.057 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |updateChain|
+17:21:34.057 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |updateChain|
+17:21:34.058 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |updateChain|
+17:21:34.058 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.059 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.060 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.060 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.063 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.063 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.064 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.065 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.066 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.066 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.068 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.069 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.070 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.072 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.072 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.073 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.075 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.076 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.076 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.078 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.079 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.079 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.082 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.083 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method updateChain
+17:21:34.083 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.110 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:34.110 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:34.110 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |create|
+17:21:34.110 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |create|
+17:21:34.110 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:34.114 DEBUG [s.d.s.w.r.p.ModelAttributeParameterExpander]  Expanding parameter type: org.springframework.ui.Model
+17:21:34.120 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:34.121 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create
+17:21:34.121 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:34.121 INFO [s.d.s.w.r.o.CachingOperationNameGenerator]  Generating unique operation named: createUsingGET_2
+17:21:34.122 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:34.122 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |create4Test|
+17:21:34.122 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |create4Test|
+17:21:34.122 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |create4Test|
+17:21:34.122 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:34.123 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:34.123 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method create4Test
+17:21:34.124 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:34.124 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:34.124 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |delete|
+17:21:34.124 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |delete|
+17:21:34.125 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |delete|
+17:21:34.125 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:34.125 DEBUG [s.d.s.w.r.p.ModelAttributeParameterExpander]  Expanding parameter type: org.springframework.ui.Model
+17:21:34.126 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:34.126 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method delete
+17:21:34.126 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:34.127 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:34.127 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |listAll|
+17:21:34.127 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |listAll|
+17:21:34.127 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |listAll|
+17:21:34.128 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:34.128 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:34.128 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method listAll
+17:21:34.129 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:34.129 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Ljava/lang/String;
+17:21:34.129 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |retrieve|
+17:21:34.129 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |retrieve|
+17:21:34.129 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |retrieve|
+17:21:34.130 DEBUG [s.d.s.w.s.ApiModelReader]  Did not find any parameter models for java.lang.String
+17:21:34.130 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: string
+17:21:34.130 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method retrieve
+17:21:34.131 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:string
+17:21:34.132 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.132 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |confirm|
+17:21:34.132 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |confirm|
+17:21:34.132 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |confirm|
+17:21:34.132 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.132 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key RespEntity
+17:21:34.133 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.133 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.134 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.135 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.135 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.135 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.136 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.137 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.137 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.138 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.138 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.139 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.140 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.140 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.140 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.141 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.141 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.141 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.142 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.143 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.143 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.144 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.144 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method confirm
+17:21:34.144 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.146 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.146 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |bindWallet|
+17:21:34.146 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |bindWallet|
+17:21:34.146 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |bindWallet|
+17:21:34.146 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.146 DEBUG [s.d.s.w.s.ApiModelReader]  Adding a new model with key RespEntity
+17:21:34.147 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.148 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.149 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.151 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.151 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.152 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.154 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.154 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.155 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.156 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.157 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.157 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.158 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.159 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.159 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.160 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.160 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.161 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.162 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.162 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.163 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.164 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.164 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method bindWallet
+17:21:34.164 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.165 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.165 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |getUserMessage|
+17:21:34.165 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |getUserMessage|
+17:21:34.166 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |getUserMessage|
+17:21:34.166 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.167 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.167 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.167 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.169 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.169 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.169 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.170 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.171 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.171 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.172 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.172 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.172 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.174 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.174 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.174 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.175 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.176 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.176 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.177 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.177 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.178 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.179 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.179 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method getUserMessage
+17:21:34.179 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.180 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.180 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |login|
+17:21:34.180 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |login|
+17:21:34.181 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |login|
+17:21:34.181 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.182 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.182 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.182 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.183 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.184 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.184 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.185 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.185 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.186 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.187 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.187 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.188 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.189 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.189 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.189 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.190 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.191 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.191 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.192 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.192 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.193 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.194 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.194 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method login
+17:21:34.194 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.195 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.195 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |register|
+17:21:34.195 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |register|
+17:21:34.196 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |register|
+17:21:34.196 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.197 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.197 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.198 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.199 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.199 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.199 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.200 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.201 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.201 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.202 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.203 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.203 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.204 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.205 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.205 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.206 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.207 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.207 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.208 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.209 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.209 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.211 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.211 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method register
+17:21:34.211 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.212 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.212 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |signOut|
+17:21:34.212 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |signOut|
+17:21:34.213 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |signOut|
+17:21:34.213 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.214 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.215 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.215 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.216 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.217 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.217 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.219 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.219 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.220 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.221 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.221 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.221 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.223 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.223 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.223 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.224 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.224 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.225 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.226 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.226 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.227 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.228 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.228 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method signOut
+17:21:34.228 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.229 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Adding return parameter of type Lbiz/pdxtech/iaas/resp/RespEntity;
+17:21:34.229 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Reading parameters models for handlerMethod |vCode|
+17:21:34.230 DEBUG [s.d.s.w.r.o.OperationModelsProvider]  Finished reading parameters models for handlerMethod |vCode|
+17:21:34.230 DEBUG [s.d.s.r.o.SwaggerOperationModelsProvider]  Reading parameters models for handlerMethod |vCode|
+17:21:34.230 DEBUG [s.d.s.w.s.ApiModelReader]  Generated parameter model id: RespEntity, name: RespEntity, schema: {} models
+17:21:34.232 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.232 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.232 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.234 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.234 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.235 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.236 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.236 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.237 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.238 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.238 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.238 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.239 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.240 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.240 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.241 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.241 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.242 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.243 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.243 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.243 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.244 DEBUG [s.d.s.w.r.o.OperationResponseClassReader]  Setting spring response class to: RespEntity
+17:21:34.245 DEBUG [s.d.s.r.o.OperationAuthReader]  Authorization count 0 for method vCode
+17:21:34.245 DEBUG [s.d.s.r.o.SwaggerOperationResponseClassReader]  Setting response class to:RespEntity
+17:21:34.417 INFO [o.a.c.h.Http11NioProtocol]  Starting ProtocolHandler ["http-nio-8080"]
+17:21:34.423 INFO [o.a.t.u.n.NioSelectorPool]  Using a shared selector for servlet write/read
+17:21:34.449 INFO [b.p.i.a.RabbitRunner]  Sending message...
+17:21:34.482 INFO [b.p.i.a.RabbitRunner]  Sent message...
+17:21:34.482 INFO [b.p.i.c.ClusterRunner]  entering self-org runner...
+17:21:34.482 INFO [b.p.i.c.ClusterRunner]  127.0.0.1:2181 300000 /pdx/iaas/group
+17:21:34.482 INFO [b.p.i.c.ClusterRunner]  done with self-org runner.
+17:21:34.484 INFO [b.p.i.e.StorageRunner]  entering storage runner...
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:host.name=lixinchao-pc
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:java.version=1.8.0_181
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:java.vendor=Oracle Corporation
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:java.home=/opt/java/jdk1.8.0_181/jre
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:java.class.path=/opt/java/jdk1.8.0_181/jre/lib/charsets.jar:/opt/java/jdk1.8.0_181/jre/lib/deploy.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/cldrdata.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/dnsns.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/jaccess.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/jfxrt.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/localedata.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/nashorn.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/sunec.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/sunjce_provider.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/sunpkcs11.jar:/opt/java/jdk1.8.0_181/jre/lib/ext/zipfs.jar:/opt/java/jdk1.8.0_181/jre/lib/javaws.jar:/opt/java/jdk1.8.0_181/jre/lib/jce.jar:/opt/java/jdk1.8.0_181/jre/lib/jfr.jar:/opt/java/jdk1.8.0_181/jre/lib/jfxswt.jar:/opt/java/jdk1.8.0_181/jre/lib/jsse.jar:/opt/java/jdk1.8.0_181/jre/lib/management-agent.jar:/opt/java/jdk1.8.0_181/jre/lib/plugin.jar:/opt/java/jdk1.8.0_181/jre/lib/resources.jar:/opt/java/jdk1.8.0_181/jre/lib/rt.jar:/home/lixinchao/IdeaProjects/company-project/iaas-service/target/classes:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.0.6.RELEASE/spring-boot-starter-web-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter/2.0.6.RELEASE/spring-boot-starter-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot/2.0.6.RELEASE/spring-boot-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.6.RELEASE/spring-boot-starter-logging-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/lixinchao/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/lixinchao/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/home/lixinchao/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/home/lixinchao/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/lixinchao/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.0.6.RELEASE/spring-boot-starter-json-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.0.6.RELEASE/spring-boot-starter-tomcat-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar:/home/lixinchao/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.34/tomcat-embed-el-8.5.34.jar:/home/lixinchao/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.34/tomcat-embed-websocket-8.5.34.jar:/home/lixinchao/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar:/home/lixinchao/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/home/lixinchao/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/lixinchao/.m2/repository/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-beans/5.0.10.RELEASE/spring-beans-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-webmvc/5.0.10.RELEASE/spring-webmvc-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-expression/5.0.10.RELEASE/spring-expression-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.0.6.RELEASE/spring-boot-starter-thymeleaf-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.10.RELEASE/thymeleaf-spring5-3.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/thymeleaf/thymeleaf/3.0.10.RELEASE/thymeleaf-3.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/lixinchao/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.1.RELEASE/thymeleaf-extras-java8time-3.0.1.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-jersey/2.0.6.RELEASE/spring-boot-starter-jersey-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.0.6.RELEASE/spring-boot-starter-validation-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/core/jersey-client/2.26/jersey-client-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.26/jersey-media-jaxb-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.26/jersey-container-servlet-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/2.26/jersey-bean-validation-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/ext/jersey-spring4/2.26/jersey-spring4-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.26/jersey-hk2-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b42/hk2-locator-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b42/aopalliance-repackaged-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2/2.5.0-b42/hk2-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b42/hk2-utils-2.5.0-b42.jar:/home/lixinchao/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b42/hk2-api-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/config-types/2.5.0-b42/config-types-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-core/2.5.0-b42/hk2-core-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-config/2.5.0-b42/hk2-config-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/hk2-runlevel/2.5.0-b42/hk2-runlevel-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/class-model/2.5.0-b42/class-model-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/external/asm-all-repackaged/2.5.0-b42/asm-all-repackaged-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/hk2/spring-bridge/2.5.0-b42/spring-bridge-2.5.0-b42.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.26/jersey-media-json-jackson-2.26.jar:/home/lixinchao/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.26/jersey-entity-filtering-2.26.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.7/jackson-module-jaxb-annotations-2.9.7.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.0.6.RELEASE/spring-boot-starter-aop-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/retry/spring-retry/1.2.2.RELEASE/spring-retry-1.2.2.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-core/5.0.10.RELEASE/spring-core-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-jcl/5.0.10.RELEASE/spring-jcl-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar:/home/lixinchao/.m2/repository/javax/servlet/javax.servlet-api/4.0.0/javax.servlet-api-4.0.0.jar:/home/lixinchao/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1.1/javax.ws.rs-api-2.1.1.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.7/jackson-annotations-2.9.7.jar:/home/lixinchao/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/home/lixinchao/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-amqp/2.0.6.RELEASE/spring-boot-starter-amqp-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-messaging/5.0.10.RELEASE/spring-messaging-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/amqp/spring-amqp/2.1.0.RELEASE/spring-amqp-2.1.0.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.0.RELEASE/spring-rabbit-2.1.0.RELEASE.jar:/home/lixinchao/.m2/repository/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar:/home/lixinchao/.m2/repository/org/springframework/spring-context/5.0.10.RELEASE/spring-context-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-tx/5.0.10.RELEASE/spring-tx-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.0.6.RELEASE/spring-boot-starter-data-jpa-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.0.6.RELEASE/spring-boot-starter-jdbc-2.0.6.RELEASE.jar:/home/lixinchao/.m2/repository/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.jar:/home/lixinchao/.m2/repository/org/springframework/spring-jdbc/5.0.10.RELEASE/spring-jdbc-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/home/lixinchao/.m2/repository/org/hibernate/hibernate-core/5.2.17.Final/hibernate-core-5.2.17.Final.jar:/home/lixinchao/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar:/home/lixinchao/.m2/repository/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar:/home/lixinchao/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/lixinchao/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/home/lixinchao/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/lixinchao/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/home/lixinchao/.m2/repository/org/springframework/data/spring-data-jpa/2.0.11.RELEASE/spring-data-jpa-2.0.11.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/data/spring-data-commons/2.0.11.RELEASE/spring-data-commons-2.0.11.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/spring-aspects/5.0.10.RELEASE/spring-aspects-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar:/home/lixinchao/.m2/repository/org/apache/zookeeper/zookeeper/3.4.13/zookeeper-3.4.13.jar:/home/lixinchao/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/lixinchao/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar:/home/lixinchao/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/lixinchao/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/home/lixinchao/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/home/lixinchao/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/home/lixinchao/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.57/bcpkix-jdk15on-1.57.jar:/home/lixinchao/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.57/bcprov-jdk15on-1.57.jar:/home/lixinchao/.m2/repository/com/nimbusds/nimbus-jose-jwt/6.2/nimbus-jose-jwt-6.2.jar:/home/lixinchao/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/home/lixinchao/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/lixinchao/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/lixinchao/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/home/lixinchao/.m2/repository/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar:/home/lixinchao/.m2/repository/org/apache/logging/log4j/log4j-api/2.7/log4j-api-2.7.jar:/home/lixinchao/.m2/repository/org/apache/logging/log4j/log4j-core/2.7/log4j-core-2.7.jar:/home/lixinchao/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.7/log4j-slf4j-impl-2.7.jar:/home/lixinchao/.m2/repository/net/bytebuddy/byte-buddy/1.7.11/byte-buddy-1.7.11.jar:/home/lixinchao/.m2/repository/com/github/briandilley/jsonrpc4j/jsonrpc4j/1.5.2/jsonrpc4j-1.5.2.jar:/home/lixinchao/.m2/repository/net/iharder/base64/2.3.9/base64-2.3.9.jar:/home/lixinchao/.m2/repository/org/ethereum/ethereumj-core/1.6.3-RELEASE/ethereumj-core-1.6.3-RELEASE.jar:/home/lixinchao/.m2/repository/com/cedarsoftware/java-util/1.8.0/java-util-1.8.0.jar:/home/lixinchao/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/lixinchao/.m2/repository/com/cedarsoftware/json-io/2.4.1/json-io-2.4.1.jar:/home/lixinchao/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/home/lixinchao/.m2/repository/com/googlecode/concurrent-locks/concurrent-locks/1.0.0/concurrent-locks-1.0.0.jar:/home/lixinchao/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/lixinchao/.m2/repository/com/madgag/spongycastle/core/1.53.0.0/core-1.53.0.0.jar:/home/lixinchao/.m2/repository/com/madgag/spongycastle/prov/1.53.0.0/prov-1.53.0.0.jar:/home/lixinchao/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar:/home/lixinchao/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/lixinchao/.m2/repository/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar:/home/lixinchao/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/lixinchao/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/home/lixinchao/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/home/lixinchao/.m2/repository/org/ethereum/leveldbjni-all/1.18.3/leveldbjni-all-1.18.3.jar:/home/lixinchao/.m2/repository/org/ethereum/solcJ-all/0.4.8/solcJ-all-0.4.8.jar:/home/lixinchao/.m2/repository/org/iq80/leveldb/leveldb/0.7/leveldb-0.7.jar:/home/lixinchao/.m2/repository/org/iq80/leveldb/leveldb-api/0.7/leveldb-api-0.7.jar:/home/lixinchao/.m2/repository/org/springframework/spring-orm/5.0.10.RELEASE/spring-orm-5.0.10.RELEASE.jar:/home/lixinchao/.m2/repository/biz/pdxtech/baap/baap-driver-ethereum/5.0.4/baap-driver-ethereum-5.0.4.jar:/home/lixinchao/.m2/repository/biz/pdxtech/baap/baap-driver/5.0.4/baap-driver-5.0.4.jar:/home/lixinchao/.m2/repository/biz/pdxtech/baap/baap-api/5.0.4/baap-api-5.0.4.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-all/1.11.0/grpc-all-1.11.0.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-context/1.11.0/grpc-context-1.11.0.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-netty/1.11.0/grpc-netty-1.11.0.jar:/home/lixinchao/.m2/repository/io/netty/netty-codec-http2/4.1.29.Final/netty-codec-http2-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-codec-http/4.1.29.Final/netty-codec-http-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-codec/4.1.29.Final/netty-codec-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-handler/4.1.29.Final/netty-handler-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-buffer/4.1.29.Final/netty-buffer-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-common/4.1.29.Final/netty-common-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-handler-proxy/4.1.29.Final/netty-handler-proxy-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-transport/4.1.29.Final/netty-transport-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-resolver/4.1.29.Final/netty-resolver-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/netty/netty-codec-socks/4.1.29.Final/netty-codec-socks-4.1.29.Final.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-stub/1.11.0/grpc-stub-1.11.0.jar:/home/lixinchao/.m2/repository/biz/pdxtech/baap/baap-util/5.0.4/baap-util-5.0.4.jar:/home/lixinchao/.m2/repository/com/squareup/okhttp3/okhttp/3.8.1/okhttp-3.8.1.jar:/home/lixinchao/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-protobuf/1.11.0/grpc-protobuf-1.11.0.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-core/1.11.0/grpc-core-1.11.0.jar:/home/lixinchao/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/home/lixinchao/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.2/error_prone_annotations-2.1.2.jar:/home/lixinchao/.m2/repository/io/opencensus/opencensus-api/0.11.0/opencensus-api-0.11.0.jar:/home/lixinchao/.m2/repository/io/opencensus/opencensus-contrib-grpc-metrics/0.11.0/opencensus-contrib-grpc-metrics-0.11.0.jar:/home/lixinchao/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar:/home/lixinchao/.m2/repository/com/google/protobuf/protobuf-java-util/3.5.1/protobuf-java-util-3.5.1.jar:/home/lixinchao/.m2/repository/com/google/api/grpc/proto-google-common-protos/1.0.0/proto-google-common-protos-1.0.0.jar:/home/lixinchao/.m2/repository/io/grpc/grpc-protobuf-lite/1.11.0/grpc-protobuf-lite-1.11.0.jar:/home/lixinchao/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/lixinchao/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.8.Final/netty-tcnative-boringssl-static-2.0.8.Final.jar:/home/lixinchao/.m2/repository/biz/pdxtech/baap/baap-shim/5.0.4/baap-shim-5.0.4.jar:/home/lixinchao/.m2/repository/org/hyperledger/shim-client/1.0.4/shim-client-1.0.4.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-swagger2/2.7.0/springfox-swagger2-2.7.0.jar:/home/lixinchao/.m2/repository/io/swagger/swagger-annotations/1.5.13/swagger-annotations-1.5.13.jar:/home/lixinchao/.m2/repository/io/swagger/swagger-models/1.5.13/swagger-models-1.5.13.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-spi/2.7.0/springfox-spi-2.7.0.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-core/2.7.0/springfox-core-2.7.0.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-schema/2.7.0/springfox-schema-2.7.0.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-swagger-common/2.7.0/springfox-swagger-common-2.7.0.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-spring-web/2.7.0/springfox-spring-web-2.7.0.jar:/home/lixinchao/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/lixinchao/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/lixinchao/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/home/lixinchao/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/home/lixinchao/.m2/repository/org/mapstruct/mapstruct/1.1.0.Final/mapstruct-1.1.0.Final.jar:/home/lixinchao/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar:/home/lixinchao/.m2/repository/io/swagger/swagger-jaxrs/1.5.20/swagger-jaxrs-1.5.20.jar:/home/lixinchao/.m2/repository/io/swagger/swagger-core/1.5.20/swagger-core-1.5.20.jar:/home/lixinchao/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.9.7/jackson-dataformat-yaml-2.9.7.jar:/home/lixinchao/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar:/home/lixinchao/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar:/home/lixinchao/.m2/repository/com/hazelcast/hazelcast-client/3.5.5/hazelcast-client-3.5.5.jar:/home/lixinchao/.m2/repository/com/hazelcast/hazelcast/3.5.5/hazelcast-3.5.5.jar:/home/lixinchao/.m2/repository/com/sun/jersey/jersey-client/1.18.6/jersey-client-1.18.6.jar:/home/lixinchao/.m2/repository/com/sun/jersey/jersey-core/1.18.6/jersey-core-1.18.6.jar:/opt/idea/ideaIU-2018.2.5/idea-IU-182.4892.20/lib/idea_rt.jar:/opt/idea/ideaIU-2018.2.5/idea-IU-182.4892.20/lib/rt/debugger-agent.jar
+17:21:34.490 INFO [o.a.z.ZooKeeper]  Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:java.io.tmpdir=/tmp
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:java.compiler=<NA>
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:os.name=Linux
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:os.arch=amd64
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:os.version=4.15.0-43-generic
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:user.name=lixinchao
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:user.home=/home/lixinchao
+17:21:34.491 INFO [o.a.z.ZooKeeper]  Client environment:user.dir=/home/lixinchao/IdeaProjects/company-project/iaas-service
+17:21:34.492 INFO [o.a.z.ZooKeeper]  Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=300000 watcher=biz.pdxtech.iaas.cluster.ClusterRunner@7b7b1448
+17:21:34.498 DEBUG [o.a.z.ClientCnxn]  zookeeper.disableAutoWatchReset is false
+17:21:34.528 INFO [o.a.z.ClientCnxn]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+17:21:34.534 INFO [o.a.z.ClientCnxn]  Socket connection established to localhost/127.0.0.1:2181, initiating session
+17:21:34.536 DEBUG [o.a.z.ClientCnxn]  Session establishment request sent on localhost/127.0.0.1:2181
+17:21:34.554 INFO [b.p.i.a.Receiver]  Received <type:HEARTBEAT>
+17:21:34.555 INFO [b.p.i.a.Receiver]  Received <type:HEARTBEAT>
+17:21:34.612 INFO [o.a.z.ClientCnxn]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100004021b30007, negotiated timeout = 40000
+17:21:34.615 INFO [b.p.i.c.ClusterRunner]  processing watcher event: WatchedEvent state:SyncConnected type:None path:null
+17:21:34.615 INFO [b.p.i.c.ClusterRunner]  zookeeper connected, starting up
+17:21:34.626 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,23,0  request:: '/pdx,T  response:: s{3,3,1547430840910,1547430840910,0,1,0,0,36,1,5} 
+17:21:34.626 INFO [b.p.i.c.ClusterRunner]  Node exists and the node version is 0
+17:21:34.637 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 2,3  replyHeader:: 2,23,0  request:: '/pdx/iaas,T  response:: s{5,5,1547430840992,1547430840992,0,1,0,0,36,1,6} 
+17:21:34.637 INFO [b.p.i.c.ClusterRunner]  Node exists and the node version is 0
+17:21:34.638 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 3,3  replyHeader:: 3,23,0  request:: '/pdx/iaas/group,T  response:: s{6,6,1547430841039,1547430841039,0,11,0,0,36,1,22} 
+17:21:34.639 INFO [b.p.i.c.ClusterRunner]  Node exists and the node version is 0
+17:21:34.655 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 4,1  replyHeader:: 4,24,0  request:: '/pdx/iaas/group/8c36c064-9284-400f-8595-39b5414de7bd,#38633336633036342d393238342d343030662d383539352d333962353431346465376264,v{s{31,s{'world,'anyone}}},1  response:: '/pdx/iaas/group/8c36c064-9284-400f-8595-39b5414de7bd 
+17:21:34.657 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 5,3  replyHeader:: 5,24,0  request:: '/pdx/iaas/group,T  response:: s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:21:34.657 INFO [b.p.i.c.ClusterRunner]  Node exists and the node version is 0
+17:21:34.667 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 6,12  replyHeader:: 6,24,0  request:: '/pdx/iaas/group,T  response:: v{'a664ce26-f78f-4786-b7ec-6f923caceb05,'8c36c064-9284-400f-8595-39b5414de7bd},s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:21:34.667 INFO [b.p.i.c.Partitioner]  auto adjust >>>>>, cluster size = 2
+17:21:34.667 INFO [b.p.i.c.Partitioner]  members: [8c36c064-9284-400f-8595-39b5414de7bd, a664ce26-f78f-4786-b7ec-6f923caceb05]
+17:21:34.667 INFO [b.p.i.c.Partitioner]  auto adjust <<<<<, my rank is 0
+17:21:34.948 INFO [b.p.i.e.StorageRunner]  done with storage runner.
+17:21:34.953 INFO [b.p.i.s.TopologyService]  Topology service started
+17:21:34.957 INFO [b.p.i.s.c.ChainService]  Chain service is started !
+17:21:35.415 INFO [b.p.i.s.TopologyService]  Houskeeping For Trust-Chain Started   >>>  My section is from 0 to 2147483648 
+
+17:21:35.472 INFO [b.p.i.s.TopologyService]  TrustChain Healthy Status >> ChainId:739, SizeDesired:3, ActualInService:0, DeadNodes:3 
+
+17:21:35.474 INFO [o.a.z.ZooKeeper]  Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=biz.pdxtech.iaas.util.ZkUtil@67f6ae17
+17:21:35.479 INFO [o.a.z.ClientCnxn]  Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+17:21:35.482 INFO [o.a.z.ClientCnxn]  Socket connection established to localhost/127.0.0.1:2181, initiating session
+17:21:35.482 DEBUG [o.a.z.ClientCnxn]  Session establishment request sent on localhost/127.0.0.1:2181
+17:21:35.497 INFO [o.a.z.ClientCnxn]  Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x100004021b30008, negotiated timeout = 30000
+17:21:35.498 INFO [b.p.i.u.ZkUtil]  Zookeeper Watcher Event : WatchedEvent state:SyncConnected type:None path:null 
+
+17:21:35.498 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 1,3  replyHeader:: 1,25,0  request:: '/pdx/iaas/group,T  response:: s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:21:35.498 INFO [b.p.i.u.ZkUtil]  Node exists and the node version is 0
+17:21:35.499 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 2,12  replyHeader:: 2,25,0  request:: '/pdx/iaas/group,T  response:: v{'a664ce26-f78f-4786-b7ec-6f923caceb05,'8c36c064-9284-400f-8595-39b5414de7bd},s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:21:35.513 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 3,3  replyHeader:: 3,25,-101  request:: '/trust-chain-rear,T  response::  
+17:21:35.514 INFO [b.p.i.u.ZkUtil]  Node does not exists
+17:21:35.519 DEBUG [o.a.z.ClientCnxn]  Got notification sessionid:0x100004021b30008
+17:21:35.520 DEBUG [o.a.z.ClientCnxn]  Got WatchedEvent state:SyncConnected type:NodeCreated path:/trust-chain-rear for sessionid 0x100004021b30008
+17:21:35.520 INFO [b.p.i.u.ZkUtil]  Zookeeper Watcher Event : WatchedEvent state:SyncConnected type:NodeCreated path:/trust-chain-rear 
+
+17:21:35.520 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 4,1  replyHeader:: 4,26,0  request:: '/trust-chain-rear,,v{s{31,s{'world,'anyone}}},0  response:: '/trust-chain-rear 
+17:21:35.520 INFO [b.p.i.s.TopologyService]  Not Enough Active Nodes For Trust Chain , ChianId : 739 , LackAmount : 3
+17:21:35.523 INFO [b.p.i.s.TopologyService]  TrustChain Healthy Status >> ChainId:4, SizeDesired:3, ActualInService:3, DeadNodes:0 
+
+17:21:35.523 INFO [b.p.i.s.TopologyService]  Houskeeping For Trust-Chain Finished  <<<  It takes 0 seconds 
+
+17:21:35.523 INFO [b.p.i.s.TopologyService]  Houskeeping For Biz-Chain Started   >>>  My section is from 0 to 2147483648 
+
+17:21:35.527 INFO [b.p.i.s.TopologyService]  Houskeeping For Biz-Chain Finished  >>>  It takes 0 seconds 
+
+17:21:45.527 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:21:48.014 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 1ms
+17:21:55.535 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:21:56.494 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:22:01.361 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:22:05.545 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:22:14.699 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 1ms
+17:22:15.554 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:22:25.563 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:22:26.495 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:22:28.032 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:22:35.571 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:22:41.371 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:22:45.581 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:22:54.718 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:22:55.590 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:22:56.495 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:23:05.598 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:23:08.055 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 1ms
+17:23:15.608 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:23:21.400 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:23:25.612 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:23:26.495 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:23:34.743 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 1ms
+17:23:35.615 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:23:45.618 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 1ms
+17:23:48.089 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:23:55.623 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:23:56.496 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:24:01.431 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:24:04.528 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 7,3  replyHeader:: 7,26,0  request:: '/pdx/iaas/group/8c36c064-9284-400f-8595-39b5414de7bd,T  response:: s{24,24,1547457694648,1547457694648,0,0,0,72057869481213959,36,0,24} 
+17:24:04.529 INFO [b.p.i.c.ClusterRunner]  zookeeper heartbeat: i am still alive
+17:24:05.627 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:15.634 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:17.870 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:24:25.641 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:26.496 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:24:31.215 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:24:35.585 INFO [b.p.i.s.TopologyService]  Houskeeping For Trust-Chain Started   >>>  My section is from 0 to 2147483648 
+
+17:24:35.618 INFO [b.p.i.s.TopologyService]  TrustChain Healthy Status >> ChainId:739, SizeDesired:3, ActualInService:0, DeadNodes:3 
+
+17:24:35.619 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 5,3  replyHeader:: 5,26,0  request:: '/pdx/iaas/group,T  response:: s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:24:35.619 INFO [b.p.i.u.ZkUtil]  Node exists and the node version is 0
+17:24:35.619 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:35.619 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 6,12  replyHeader:: 6,26,0  request:: '/pdx/iaas/group,T  response:: v{'a664ce26-f78f-4786-b7ec-6f923caceb05,'8c36c064-9284-400f-8595-39b5414de7bd},s{6,6,1547430841039,1547430841039,0,12,0,0,36,2,24} 
+17:24:35.624 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30008, packet:: clientPath:null serverPath:null finished:false header:: 7,3  replyHeader:: 7,26,0  request:: '/trust-chain-rear,T  response:: s{26,26,1547457695515,1547457695515,0,0,0,0,0,0,26} 
+17:24:35.624 INFO [b.p.i.u.ZkUtil]  Node exists and the node version is 0
+17:24:35.624 INFO [b.p.i.s.TopologyService]  Not Enough Active Nodes For Trust Chain , ChianId : 739 , LackAmount : 3
+17:24:35.626 INFO [b.p.i.s.TopologyService]  TrustChain Healthy Status >> ChainId:4, SizeDesired:3, ActualInService:3, DeadNodes:0 
+
+17:24:35.626 INFO [b.p.i.s.TopologyService]  Houskeeping For Trust-Chain Finished  <<<  It takes 0 seconds 
+
+17:24:35.626 INFO [b.p.i.s.TopologyService]  Houskeeping For Biz-Chain Started   >>>  My section is from 0 to 2147483648 
+
+17:24:35.629 INFO [b.p.i.s.TopologyService]  Houskeeping For Biz-Chain Finished  >>>  It takes 0 seconds 
+
+17:24:44.556 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:24:45.630 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:55.635 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:24:56.496 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:24:57.899 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:25:05.641 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:11.246 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:25:15.650 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:24.592 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 1ms
+17:25:25.662 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:26.497 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:25:35.669 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:37.938 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:25:45.678 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:51.284 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:25:55.688 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:25:56.497 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:26:04.622 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:26:05.698 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:15.702 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:17.968 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:26:25.707 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:26.498 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:26:31.314 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:26:34.527 DEBUG [o.a.z.ClientCnxn]  Reading reply sessionid:0x100004021b30007, packet:: clientPath:null serverPath:null finished:false header:: 8,3  replyHeader:: 8,26,0  request:: '/pdx/iaas/group/8c36c064-9284-400f-8595-39b5414de7bd,T  response:: s{24,24,1547457694648,1547457694648,0,0,0,72057869481213959,36,0,24} 
+17:26:34.527 INFO [b.p.i.c.ClusterRunner]  zookeeper heartbeat: i am still alive
+17:26:35.715 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:45.723 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:47.870 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:26:55.730 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:26:56.498 DEBUG [c.z.h.p.HikariPool]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+17:27:01.216 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30007 after 0ms
+17:27:05.738 DEBUG [o.a.z.ClientCnxn]  Got ping response for sessionid: 0x100004021b30008 after 0ms
+17:44:34.683 INFO [general]  Config ( yes ): default properties from resource 'ethereumj.conf'
+17:44:34.688 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.res resource 'null'
+17:44:34.688 INFO [general]  Config ( no  ): user properties from resource 'user.conf'
+17:44:34.689 INFO [general]  Config ( no  ): user properties from file '/home/lixinchao/IdeaProjects/company-project/iaas-service/config/ethereumj.conf'
+17:44:34.690 INFO [general]  Config ( no  ): test properties from resource 'test-ethereumj.conf'
+17:44:34.691 INFO [general]  Config ( no  ): test properties from resource 'test-user.conf'
+17:44:34.692 INFO [general]  Config ( no  ): user properties from -Dethereumj.conf.file file 'null'
+17:44:34.692 INFO [general]  Config ( no  ): config passed via constructor
+17:44:34.695 DEBUG [general]  Config trace: # ethereumj.conf: 164-415
+blockchain {
+    # ethereumj.conf: 164
+    config {
+        # ethereumj.conf: 164
+        name=main
+    }
+    # ethereumj.conf: 415
+    only=false
+}
+# ethereumj.conf: 421
+blocks {
+    # ethereumj.conf: 421
+    loader=""
+}
+# ethereumj.conf: 211
+cache {
+    # ethereumj.conf: 232
+    blockQueueSize=32
+    # ethereumj.conf: 213
+    flush {
+        # ethereumj.conf: 222
+        blocks=0
+        # ethereumj.conf: 225
+        shortSyncFlush=true
+        # ethereumj.conf: 217
+        writeCacheSize=64
+    }
+    # ethereumj.conf: 235
+    headerQueueSize=8
+    # ethereumj.conf: 241
+    maxStateBloomSize=128
+    # ethereumj.conf: 229
+    stateCacheSize=256
+}
+# ethereumj.conf: 424
+crypto {
+    # ethereumj.conf: 428-429
+    hash {
+        # ethereumj.conf: 428
+        alg256=ETH-KECCAK-256
+        # ethereumj.conf: 429
+        alg512=ETH-KECCAK-512
+    }
+    # ethereumj.conf: 426
+    providerName=SC
+}
+# ethereumj.conf: 172
+database {
+    # ethereumj.conf: 175
+    dir=database
+    # ethereumj.conf: 194
+    incompatibleDatabaseBehavior=EXIT
+    # ethereumj.conf: 200
+    prune {
+        # ethereumj.conf: 201
+        enabled=true
+        # ethereumj.conf: 206
+        maxDepth=192
+    }
+    # ethereumj.conf: 181
+    reset=false
+    # ethereumj.conf: 187
+    resetBlock=0
+}
+# ethereumj.conf: 344
+dump {
+    # ethereumj.conf: 357
+    block=-1
+    # ethereumj.conf: 361
+    clean {
+        # ethereumj.conf: 361
+        on {
+            # ethereumj.conf: 361
+            restart=true
+        }
+    }
+    # ethereumj.conf: 351
+    dir=dmp
+    # ethereumj.conf: 350
+    full=false
+    # ethereumj.conf: 358
+    style=pretty
+}
+# ethereumj.conf: 150
+genesis="frontier.json"
+# ethereumj.conf: 397
+hello {
+    # ethereumj.conf: 397
+    phrase=Dev
+}
+# ethereumj.conf: 412
+keyvalue {
+    # ethereumj.conf: 412
+    datasource=leveldb
+}
+# ethereumj.conf: 283
+mine {
+    # ethereumj.conf: 302
+    coinbase="0000000000000000000000000000000000000000"
+    # ethereumj.conf: 293
+    cpuMineThreads=4
+    # ethereumj.conf: 306
+    extraData="EthereumJ powered"
+    # ethereumj.conf: 299
+    fullDataSet=true
+    # ethereumj.conf: 315
+    minBlockTimeoutMsec=0
+    # ethereumj.conf: 312
+    minGasPrice=15000000000
+    # ethereumj.conf: 289
+    start=false
+    # ethereumj.conf: 319
+    startNonce=null
+}
+# ethereumj.conf: 1-77
+peer {
+    # ethereumj.conf: 92
+    active=[]
+    # ethereumj.conf: 121
+    capabilities=[
+        # ethereumj.conf: 121
+        eth
+    ]
+    # ethereumj.conf: 130
+    channel {
+        # ethereumj.conf: 130
+        read {
+            # ethereumj.conf: 130
+            timeout=90
+        }
+    }
+    # ethereumj.conf: 125
+    connection {
+        # ethereumj.conf: 125
+        timeout=2
+    }
+    # ethereumj.conf: 1
+    discovery {
+        # ethereumj.conf: 52
+        bind {
+            # ethereumj.conf: 52
+            ip=""
+        }
+        # ethereumj.conf: 8
+        enabled=true
+        # ethereumj.conf: 44
+        external {
+            # ethereumj.conf: 44
+            ip=null
+        }
+        # ethereumj.conf: 13
+        ip {
+            # ethereumj.conf: 13
+            list=[
+                # ethereumj.conf: 15
+                "5.1.83.226:30303",
+                # ethereumj.conf: 18
+                "52.16.188.185:30303",
+                # ethereumj.conf: 19
+                "13.93.211.84:30303",
+                # ethereumj.conf: 20
+                "191.235.84.50:30303",
+                # ethereumj.conf: 21
+                "13.75.154.138:30303",
+                # ethereumj.conf: 22
+                "52.74.57.123:30303",
+                # ethereumj.conf: 25
+                "163.172.187.252:30303",
+                # ethereumj.conf: 26
+                "163.172.157.114:30303",
+                # ethereumj.conf: 27
+                "136.243.154.244:30303",
+                # ethereumj.conf: 28
+                "88.212.206.70:30303",
+                # ethereumj.conf: 29
+                "37.128.191.230:30303",
+                # ethereumj.conf: 30
+                "46.20.235.22:30303",
+                # ethereumj.conf: 31
+                "216.158.85.185:30303",
+                # ethereumj.conf: 32
+                "212.47.247.103:30303",
+                # ethereumj.conf: 33
+                "138.201.144.135:30303",
+                # ethereumj.conf: 34
+                "45.55.33.62:30303",
+                # ethereumj.conf: 35
+                "188.166.255.12:30303",
+                # ethereumj.conf: 36
+                "159.203.210.80:30303",
+                # ethereumj.conf: 37
+                "51.15.42.252:30303",
+                # ethereumj.conf: 38
+                "163.172.171.38:30303"
+            ]
+        }
+        # ethereumj.conf: 60
+        persist=true
+        # ethereumj.conf: 56
+        public {
+            # ethereumj.conf: 56
+            home {
+                # ethereumj.conf: 56
+                node=true
+            }
+        }
+        # ethereumj.conf: 69
+        touchMaxNodes=100
+        # ethereumj.conf: 65
+        touchPeriod=600
+        # ethereumj.conf: 74
+        workers=8
+    }
+    # ethereumj.conf: 80
+    listen {
+        # ethereumj.conf: 80
+        port=30303
+    }
+    # ethereumj.conf: 117
+    maxActivePeers=30
+    # ethereumj.conf: 83
+    networkId=1
+    # ethereumj.conf: 132
+    p2p {
+        # ethereumj.conf: 142
+        eip8=true
+        # ethereumj.conf: 138
+        framing {
+            # ethereumj.conf: 138
+            maxSize=32768
+        }
+    }
+    # ethereumj.conf: 103
+    trusted=[]
+}
+# ethereumj.conf: 393
+play {
+    # ethereumj.conf: 393
+    vm=true
+}
+# ethereumj.conf: 386-414
+record {
+    # ethereumj.conf: 414
+    blocks=false
+    # ethereumj.conf: 386
+    internal {
+        # ethereumj.conf: 386
+        transactions {
+            # ethereumj.conf: 386
+            data=true
+        }
+    }
+}
+# ethereumj.conf: 409
+root {
+    # ethereumj.conf: 409
+    hash {
+        # ethereumj.conf: 409
+        start=null
+    }
+}
+# ethereumj.conf: 323
+solc {
+    # ethereumj.conf: 326
+    path=null
+}
+# ethereumj.conf: 245
+sync {
+    # ethereumj.conf: 249
+    enabled=true
+    # ethereumj.conf: 279
+    exitOnBlockConflict=false
+    # ethereumj.conf: 252
+    fast {
+        # ethereumj.conf: 256
+        enabled=false
+    }
+    # ethereumj.conf: 270
+    peer {
+        # ethereumj.conf: 270
+        count=30
+    }
+}
+# ethereumj.conf: 381
+trace {
+    # ethereumj.conf: 381
+    startblock=-1
+}
+# ethereumj.conf: 338-342
+transaction {
+    # ethereumj.conf: 338
+    approve {
+        # ethereumj.conf: 338
+        timeout=15
+    }
+    # ethereumj.conf: 342
+    outdated {
+        # ethereumj.conf: 342
+        threshold=10
+    }
+}
+# ethereumj.conf: 371
+vm {
+    # ethereumj.conf: 371
+    structured {
+        # ethereumj.conf: 374
+        compressed=true
+        # ethereumj.conf: 373
+        dir=vmtrace
+        # ethereumj.conf: 375
+        initStorageLimit=10000
+        # ethereumj.conf: 372
+        trace=false
+    }
+}
+
+17:44:34.730 ERROR [general]  Can't read config.
+java.lang.NullPointerException: null
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:219)
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:173)
+	at org.ethereum.config.SystemProperties.<init>(SystemProperties.java:161)
+	at org.ethereum.config.SystemProperties.getSpringDefault(SystemProperties.java:104)
+	at org.ethereum.config.SystemProperties.getDefault(SystemProperties.java:99)
+	at org.ethereum.crypto.HashUtil.<clinit>(HashUtil.java:55)
+	at org.ethereum.core.Transaction.getRawHash(Transaction.java:262)
+	at org.ethereum.core.Transaction.sign(Transaction.java:400)
+	at biz.pdxtech.iaas.util.ChainCodeClient.xchainTransfer(ChainCodeClient.java:219)
+	at biz.pdxtech.iaas.util.ChainCodeClient.main(ChainCodeClient.java:107)
